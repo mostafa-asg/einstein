@@ -20,3 +20,5 @@ http GET localhost:9200/_cat/indices?v
 ###### get information about some indices, for example all start with 'twi'
 http GET localhost:9200/_cat/indices/twi*?v
 
+###### Which index has the largest number of documents?
+http GET localhost:9200/_cat/indices?v&s=docs.count:desc
