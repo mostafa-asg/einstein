@@ -1,5 +1,5 @@
 # Einstein
-[Einstein](https://github.com/mostafa-asg/einstein/blob/master/images/einstein.jpg)
+![Einstein](https://github.com/mostafa-asg/einstein/blob/master/images/einstein.jpg)  
 This repo contains commands with various tools that I 've been working with them. I want to work faster so 
 I do not want to type each command, and above all, to memorize them so I created this repo to easily 
 copy and paste commands that I need.
