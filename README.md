@@ -23,3 +23,38 @@ http GET localhost:9200/_cat/indices/twi*?v
 
 ###### Which index has the largest number of documents?
 http GET localhost:9200/_cat/indices?v&s=docs.count:desc
+
+## Maven
+###### create a fat jar
+```
+ <build>
+        <plugins>
+            <plugin>
+                <artifactId>maven-assembly-plugin</artifactId>
+                <version>2.5.3</version>
+                <configuration>
+                    <!-- get all project dependencies -->
+                    <descriptorRefs>
+                        <descriptorRef>jar-with-dependencies</descriptorRef>
+                    </descriptorRefs>
+                    <!-- MainClass in manifest make a executable jar -->
+                    <archive>
+                        <manifest>
+                            <mainClass>YOUR_MAIN_CLASS</mainClass>
+                        </manifest>
+                    </archive>
+
+                </configuration>
+                <executions>
+                    <execution>
+                        <id>create-archive</id>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>single</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
+```
