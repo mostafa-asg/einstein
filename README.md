@@ -20,6 +20,16 @@ copy and paste commands that I need.
 ./kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic YOUR_TOPIC --from-beginning
 ```
 
+###### send records to a topic
+```
+./kafka-console-producer.sh --broker-list localhost:9092 --topic YOUR_TOPIC
+```
+
+###### see information about consumer groups including lag
+```
+./kafka-consumer-groups.sh --bootstrap-server localhost:9092 --group YOUR_GROUP_ID --describe
+```
+
 ## Elasticsearch
 ###### list all indices
 ```
