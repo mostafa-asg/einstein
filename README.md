@@ -85,7 +85,7 @@ Add these to `maven-assembly-plugin`'s configuration
 ```
  <finalName>callbacker.jar</finalName>
  <appendAssemblyId>false</appendAssemblyId>
-``
+```
 
 ## Typesafe (Lightbend) config
 ###### Which file should be loaded from resources?
