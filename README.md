@@ -80,6 +80,13 @@ http GET localhost:9200/_cat/indices?v&s=docs.count:desc
         </plugins>
     </build>
 ```
+###### create a fat jar with custom name
+Add these to `maven-assembly-plugin`'s configuration
+```
+ <finalName>callbacker.jar</finalName>
+ <appendAssemblyId>false</appendAssemblyId>
+``
+
 ## Typesafe (Lightbend) config
 ###### Which file should be loaded from resources?
 ```
