@@ -80,3 +80,8 @@ http GET localhost:9200/_cat/indices?v&s=docs.count:desc
         </plugins>
     </build>
 ```
+## Typesafe (Lightbend) config
+###### Which file should be loaded from resources?
+```
+java -jar -Dconfig.resource=production.conf YOUR_JAR
+```
