@@ -92,3 +92,9 @@ Add these to `maven-assembly-plugin`'s configuration
 ```
 java -jar -Dconfig.resource=production.conf YOUR_JAR
 ```
+
+## curl
+###### set http body from file
+```
+curl -X POST -H "Content-Type: application/json" --data-binary "@{FILE_PATH}" http://httpbin.org
+```
