@@ -52,6 +52,7 @@ services:
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
 ```
+Then `docker-compose up`
 
 ## Elasticsearch
 ###### list all indices
