@@ -25,6 +25,11 @@ copy and paste commands that I need.
 ./kafka-console-producer.sh --broker-list localhost:9092 --topic YOUR_TOPIC
 ```
 
+###### reset offsets to one day ago
+```
+./kafka-consumer-groups.sh --bootstrap-server localhost:9092 --group {YOUR_GROPU} --reset-offsets --all-topics --by-duration P1D --execute
+``` 
+
 ###### see information about consumer groups including lag
 ```
 ./kafka-consumer-groups.sh --bootstrap-server localhost:9092 --group YOUR_GROUP_ID --describe
